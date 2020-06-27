@@ -1,12 +1,26 @@
 
-Notes of Microsoft Azure Fundamentals Certification
-=====================================================
+Notes of Microsoft Azure Fundamentals Certification: AZ-900
+===========================================================
 
 
 ##########################################################################
-##  Chapter Heading
+##  Introduction
 ##########################################################################
 
 
-## Lesson Heading
+## Exam Topics
 ##
+
+ - Cloud concepts
+ - Azure Architecture
+ - Compute
+ - Netowrking
+ - Storage
+ - Database
+ - Authentication / Authorization
+ - Solutions on Azure
+ - Security
+ - Privacy, compliance and trust
+ - Pricing
+ - Support
+ - What to expect on exam day
