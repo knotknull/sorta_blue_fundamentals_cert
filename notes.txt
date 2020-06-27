@@ -24,3 +24,66 @@ Notes of Microsoft Azure Fundamentals Certification: AZ-900
  - Pricing
  - Support
  - What to expect on exam day
+
+## Azure Portal
+##
+https://portal.azure.com
+
+
+## Azure CLI
+##
+
+ - stable    : commands don't change
+ - structure : cli commands structured logically
+ - x platform: CLI works on windows, mac, linux
+ - automation: simple to automate cli commands
+ - logging   : keep tack of what was done
+
+https://azure.microsoft.com/en-us/downloads/
+ > click Tools
+https://docs.microsoft.com/en-us/cli/azure/install-azure-cli
+
+
+## Azure PowerShell
+##
+
+ - Cmdlet (Command-lets): script that performs a specific task
+    ex. "New-AzVM"
+ - Uses Azure Resource Manager (like CLI)
+ - Install Powershell
+https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-2.8.0
+
+
+## Azure CloudShell
+##
+ - Azure CloudShell:  Azure Portal + Azure CLI + PowerShell
+ - interactive, browser-based shell for manage resources
+ - access from web, mobile app
+ - bash or powershell environments
+ - tools: interpreters, modules, tools and support for Node.js, .NET and Python
+ - storage: dedicated storage persists between data sessions
+ - file editor
+
+https://docs.microsoft.com/en-us/azure/cloud-shell/overview
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[.]
