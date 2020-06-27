@@ -68,11 +68,123 @@ https://docs.microsoft.com/en-us/azure/cloud-shell/overview
 
 
 
+##########################################################################
+##  Cloud Concepts
+##########################################################################
+
+## Language of Cloud Computing
+##
+
+
+High Availability:
+  - hardware fails, replace instantly
+  - clusters ensure HA
+
+Fault Tolerance:
+  - resilience
+  - zero downtime: faults caused by Azure are mitigated by Azure
+
+Disaster Recovery:
+  - Plan to recover from catastrophic disaster
+    - RTO: Recover Time  Objective
+    - RPO: Recover Point Objective
+
+--Time-->>
+     ------------------X------------------------------------
+              |      Outage               |
+              |        |                  |
+              |<------>|<---------------->|
+last backup->>|  RPO   |       RTO        | <<--time to recover online
+
+# Scalability
+Scale Out:  Add more resources
+Scale Up :  Bigger resources
+
+# Elasticity
+  - Ability to quickly expand or decrease computing resources
+    (Not just VMs)  >> Elasticity enables scaling
+
+# Agility
+  - Ability to rapidly develop, test and deploy software that drives growth
 
 
 
+## Language of Cloud Economics
+##
+
+# CapEx / OpEx
+
+Capital Expenditure:  Money spent by business or org on acquiring or maintaining,
+    fixed assets such as land, buildings and equipment
+
+Operational Expenditure:  Ongoing cost for running a product, business or system
+    on a day-to-day basis, including annual costs.
 
 
+# Cloud Pricing Models
+  - Hourly Pricing: VMs, App Services
+  - Consumption: pay for resources used
+          - per execution
+          - per second
+          - combination (exec x secs)
+
+# Cloud Service Models
+ - Infrastructure-as-a-service
+ - Platform-as-a-service
+ - Software-as-a-service
+
+ - IaaS
+   - Infrastructure == servers
+   - Scaling is fast
+   - VMs & Servers, Networks, Physical Buildings
+
+ - PaaS
+   - Iaas + Middlware, Tools, DBs, etc.
+   - Supports web app life cycle
+   - Avoids software licenses
+
+ - SaaS
+   - Iaas + PaaS + Applicatons
+   - Provide a managed service / pay access fee
+   - no maintenance ex. Office365
+
+ - Serverless
+   - no servers to manage
+   - ex. Azure Functions
+
+# Azure Marketplace
+ - Solutions and services: Apps, VMs, services, etc.
+ - Azure App Store
+ - Use from: Portal, CLI, PowerShell
+ - Can publish own service via Marketplace
+
+# Cloud Architecture Models
+ - Private Cloud: Services offered to certain users
+   Pros:
+      - Complete control of Infrastructure
+      - Benefits of public cloud
+      - Better security and privacy
+   Cons:
+      - Maintenance / Staffing
+
+ - Public Cloud: AWS, Azure, GCP, etc.
+   Pros:
+      - No hardware purchase
+      - low monthly fees
+   Cons:
+      - No control over features and versions
+      - No physical access
+
+ - Hybrid Cloud: Private + Public Cloude
+   Pros:
+      - Avoid disruptions and outages
+      - Adhere to regulation, governance
+      - Span both public / private clouds
+      - Alleviate CapEx investments
+      - Allow fast scaling
+
+   Pros:
+      - Complex Infrastructure
 
 
 
