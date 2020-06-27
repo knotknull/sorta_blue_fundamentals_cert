@@ -183,7 +183,7 @@ Operational Expenditure:  Ongoing cost for running a product, business or system
       - Alleviate CapEx investments
       - Allow fast scaling
 
-   Pros:
+   Cons:
       - Complex Infrastructure
 
 
