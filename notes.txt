@@ -313,9 +313,32 @@ Cons:
   - No extra cost
 
 
-
 ## App Services
 ##
+  App Services == PaaS part of Azure Compute
+  Fully managed platform (Servers, Network, Storage, etc.) managed by Azure
+  3 Categories:
+  Web Apps: websites and online apps
+      - Runs on Windows and Linux
+      - Languages:  .Net, Java, Node.js, PHP, Python, Ruby
+      - Azure integration for easier deployment
+      - Auto-scaling and load balancing
+
+  Web Apps for containers: deploy / run containerized apps in Azure
+      - Container = self-contained application
+      - All dependencies are shipped inside the container
+      - Deploy anywhere with a consistent experience
+
+  API Apps: expose and connect data backend
+      - Range of programming languages
+      - Range of ways to secure
+
+
+## Azure Container Instances 
+##
+
+
+
 
 
 
