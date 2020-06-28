@@ -187,6 +187,78 @@ Operational Expenditure:  Ongoing cost for running a product, business or system
       - Complex Infrastructure
 
 
+##########################################################################
+##  Azure Architecture
+##########################################################################
+
+## Regions and Availability Zones
+##
+
+# Region
+  - A region is a set of data centers deployed within a latency-defined
+    perimeter and connected through a dedicated regional low-latency network.
+
+      - Region has more than one data center
+      - Regional low-latency network:  fiber connection between data centers
+
+  - Chosing a region:
+      - Choose a region closest to your users
+      - Some features aren't in all regions.
+      - Price varies by region
+
+# Paired Region
+  - Paired within same geographic area (except Brazil South)
+        East US paired w/ West US
+        Australia East paired w/ Australia Southeast
+        NOTE: Brazil South paired w/ South Central US
+
+  - Outage Fail-over:
+      - If primary region has an outage you can fail-over to secondary region
+
+  - Planned Updates:
+      - Serializes platform updates, only one region is updated at one time
+
+  - Replication
+      - Some services used paired regions for replication
+
+# Availability Zones
+  - Unique physical locations within a region (1 or more data centers)
+  - Each zone has its own power, cooling and networking
+  - Each region has a minimum of three zones.
+
+  +----------------------------------+
+  | Region                           |
+  |                                  |
+  |  [Availability]   [Availability] |
+  |  [   Zone 1   ]   [    Zone 2  ] |
+  |                                  |
+  |          [Availability]          |
+  |          [   Zone 3   ]          |
+  |                                  |
+  +----------------------------------+
+
+
+## Resource Groups and
+## Azure Resource Manager
+##
+
+# Resource Group
+  - All resources are within a resource group
+  - Resource Groups are NOT a resource !!
+      - they are a container for resources
+
+  - Each resource can ONLY EXIST in a single Resource Group
+  - Add / remove resources to any resource group at any time
+  - Can move a resource from one resource group to another
+
+
+
+
+
+
+
+
+
 
 
 
