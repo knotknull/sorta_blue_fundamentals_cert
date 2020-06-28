@@ -219,7 +219,7 @@ Operational Expenditure:  Ongoing cost for running a product, business or system
       - Serializes platform updates, only one region is updated at one time
 
   - Replication
-      - Some services used paired regions for replication
+      - Some services use paired regions for replication
 
 # Availability Zones
   - Unique physical locations within a region (1 or more data centers)
@@ -265,18 +265,57 @@ Operational Expenditure:  Ongoing cost for running a product, business or system
     (Portal, SDK, PowerShell, CloudShell, Rest)
 
     Benefits:
-      - Can deploy, manage, monitory resources as a group
+      - Can deploy, manage, monitor resources as a group
       - Consistent deployment no matter which tool
       - Define dependencies between resources
       - Assign access rights to resources via ARM
       - Tag resources / use for billing
 
 
+##########################################################################
+##  Compute
+##########################################################################
+
+## Virtual Machine
+##
+
+# Features
+  - machine you have exclusive access to
+  - VM part of IaaS / don't own or control hardware
+  - Tools: use Azure Portal to manage VMs and hybrid clouds
+  - Compliance: Azure blueprints to make VMs comply w/ guidelines
+  - Recommendations: Azure will recommend improvements
+  - Win / Linux
+
+# Pricing
+  - Calculated Hourly
+  - dependent on CPU / RAM / GPU
+
+Pros:
+  - Need to control all aspects of machine (except hardware)
+  - Install specific apps on win / linux machines
+  - Can move existing VM from on-premise / cloud provider to Azure
+Cons:
+  - Not for everything. Worth using Azure service instead
+  - Maintenance: OS updates, patches, security, etc.
+
+
+## Scale Sets
+##
+  Scale Sets:  create and manage group of identical, load balanced VMs
+
+  - provide baseline VM and create clones
+  - Multiple identical VMs
+  - High Availability
+  - Auto Scaling: automatically match demand by adding/removing VMs from scale set
+                  based on resource usage increase / decrease
+  - Large Scale:  Run up to 1000 VMs in a single scale set.
+  - No extra cost
 
 
 
-
-
+## App Services
+##
 
 
 
