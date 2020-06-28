@@ -250,12 +250,26 @@ Operational Expenditure:  Ongoing cost for running a product, business or system
   - Each resource can ONLY EXIST in a single Resource Group
   - Add / remove resources to any resource group at any time
   - Can move a resource from one resource group to another
+  - Resources from multiple regions can be in one resource group
+  - Can be used as Access Control
+      - Can give users access to a resource group and everything in it
 
+  - Resources can interact with other resources from different resource groups
+  - Resource group has location or region because it
+    stores meta data about resources within it
 
+# Azure Resource Manager
+ - deployment and management services for Azure
+ - creates, updates, deletes all resources
+ - all interaction w. Azure Resources go thru Azure Resource Manager
+    (Portal, SDK, PowerShell, CloudShell, Rest)
 
-
-
-
+    Benefits:
+      - Can deploy, manage, monitory resources as a group
+      - Consistent deployment no matter which tool
+      - Define dependencies between resources
+      - Assign access rights to resources via ARM
+      - Tag resources / use for billing
 
 
 
