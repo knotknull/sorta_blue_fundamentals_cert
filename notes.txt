@@ -429,6 +429,10 @@ NOTE:  AppService (app) resides in AppServicePlan (host)
       - function failing doesn't affect other function instances
 
 
+##########################################################################
+##  Networking
+##########################################################################
+
 
 
 
