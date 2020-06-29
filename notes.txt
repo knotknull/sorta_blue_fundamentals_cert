@@ -333,12 +333,100 @@ Cons:
       - Range of programming languages
       - Range of ways to secure
 
+NOTE:  AppService (app) resides in AppServicePlan (host)
 
-## Azure Container Instances 
+## Azure Container Instances
+##
+  - Manage Dependencies
+  - Less overhead than VMs
+  - Increased portability, deploy to various OS / HW
+  - Efficient: scaling / patching simpler
+  - Consistency: operation teams rely on container sameness
+
+ Workflow:
+
+ [SDLC]  -->> [App in Container] -->>  [Azure Container Instances]
+
+  Azure Container Instances:
+    - Azure service for running container workloads
+    - On demand, run container without managing VM
+    - Works w/ Portal, CLI, PowerShell
+
+
+## Azure Kubernetes Service (AKS)
 ##
 
+  - Replicate Container Architectures
+      - reuse container arch using kubernetes
+
+  - Standard Azure Services Included
+      - don't have to worry about infrastructure
+      - elastic provisioning, IAM
+
+  - Global Reach
+      - Use Kubernetes w/ supported Azure Regions and on-prem Azure Stack
 
 
+## Azure Container Registry (ACR)
+##
+  - Service keeps track of current container images
+  - Manages files and artifacts for containers
+  - Feeds container images to ACI and AKS
+  - Use Azure Identity and security features
+
+
+
+                                    +----------------------------------+
+                                    |  Azure Container Registry (ACR)  |
++-----------------------------------+----------------------------------+-------------------------------+
+|  AKS Cluster                                                                                         |
+|                                                                                                      |
+|    +-------------------------+   +-------------------------+           +--------------------------+  |
+|    |                   Pod   |   |                   Pod   |           |                          |  |
+|    |                         |   |                         |           |                          |  |
+|    |                         |   |                         |           |                          |  |
+|    |   +----------------+    |   |   +-----------------+   |           |   +-------------------+  |  |
+|    |   |                |    |   |   |                 |   |           |   |                   |  |  |
+|    |   |      App       |    |   |   |      App        |   |           |   |      App          |  |  |
+|    |   |   Container    |    |   |   |   Container     |   |           |   |   Container       |  |  |
+|    |   |                |    |   |   |                 |   |           |   |                   |  |  |
+|    |   +----------------+    |   |   +-----------------+   |           |   +-------------------+  |  |
+|    |                         |   |                         |           |                          |  |
+|    |                         |   |                         |           |                          |  |
+|    |   +----------------+    |   |   +-----------------+   |           |   +-------------------+  |  |
+|    |   |                |    |   |   |                 |   |           |   |                   |  |  |
+|    |   |      App       |    |   |   |      App        |   |           |   |      App          |  |  |
+|    |   |   Container    |    |   |   |   Container     |   |           |   |   Container       |  |  |
+|    |   |                |    |   |   |                 |   |           |   |                   |  |  |
+|    |   +----------------+    |   |   +-----------------+   |           |   +-------------------+  |  |
+|    |                         |   |                         |           |                          |  |
+|    +-------------------------+   +-------------------------+           +--------------------------+  |
+|                                                                                                      |
+|    +-------------------------------------------------------+           +--------------------------+  |
+|    |                         Node                          |           |          Node            |  |
+|    +-------------------------------------------------------+           +--------------------------+  |
++------------------------------------------------------------------------------------------------------+
+
+
+## Functions
+##
+  - Smallest (and larges ?) compute service on Azure
+  - A single function of compute
+  - Called, or invoked via a standard web address (URL)
+  - Runs once and stops
+
+  Architecture:
+    - Runs on VM
+    - No maintenance / processes / Nothing VM related
+    - Only focus on functionality
+
+  Benefits:
+    - Only runs when needed
+      - no traffic = no resource usage
+    - Saves money
+      - don't pay for functionality when not used
+    - Resilience
+      - function failing doesn't affect other function instances
 
 
 
