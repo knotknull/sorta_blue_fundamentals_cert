@@ -433,6 +433,125 @@ NOTE:  AppService (app) resides in AppServicePlan (host)
 ##  Networking
 ##########################################################################
 
+## Virtual Network <***>
+##
+
+  - No physical network, network is abstracted
+
+
+# Address Space:  Range if IP addresses available
+                  192.168.0.1 - 192.168.0.252
+
+  - Address space assigned to VNet
+  - Every device assigned to VNet gets IP Addr within Address Space
+
+# Subnet:  Segment VNet
+          Split Address Space among Subnets
+
+    VNet_1   =    192.168.0.001 - 192.168.0.252
+      Subnet_1 =  192.168.0.001 - 192.168.0.016
+      Subnet_2 =  192.168.0.017 - 192.168.0.032
+      Subnet_3 =  192.168.0.033 - 192.168.0.252
+
+  - Resource Grouping : group resources on same subnet
+  - Address Allocation: more efficient to allocate addresses on smaller subnet
+  - Subnet Security   : Use network security group to secure individual subnets
+
+# Subnet Regions and Subscriptions
+  - VNet belongs to a single region
+      NOTE: Every resource on VNet must be in same region too
+            Can connect VNets across regions
+
+  - VNet belongs to just one subscription
+      Subscription can have multiple VNets
+
+# Advantages
+  - Scaling:
+        can add more VNets or more addresses to VNets
+  - HA:
+        Peering VNets, Load Balancer, VPN Gateway all increase availability
+  - Isolation:
+        Manage / organize resources with subnets and network security groups
+
+
+## Load Balancer
+##
+  Load Balancer: distributes new inbound flows that arrive on Load Balancer to
+           backend pool instances, according to rules and health probes
+           health probe checks to ensure back end instance can receive data
+Usage:
+
+             really-angry-llama.com
+                       |
+        +----------------------------+
+        |       Load Balancer        |
+        +----------------------------+
+                       |
+        +----------------------------+
+        |              |             |
+   +---------+    +---------+    +---------+
+   |   VM    |    |   VM    |    |   VM    |
+   +---------+    +---------+    +---------+
+
+# Scenarios
+ - Balance incoming Internet Traffic
+ - Internal Networks
+ - Port Forwarding (traffic forwarded to specific machine)
+ - Outbound Traffic:  allow outbound connectivity to VMs
+
+
+## VPN Gateway
+##
+
+Virtual Network Gateway: 2 or more VMs deployed to Gateway Subnet
+    - VMs in Gatway Subnet are created when Virtual Network Gateway is created
+
+
+VPN Gateway: Specific type of Virtual Network Gateway
+        Sends encrypted traffic from Azure VNet and On-Prem Network over Public Internet
+
+
+
+  +----------------------------+                +----------------------------+
+  | Azure VNet                 |                | On Premise                 |
+  |              +-------------+  Encrypted     +----------------+           |
+  |              | VPN Gateway | <------------->| Encrypted      |           |
+  |              | (Public IP) |   Tunnel       |Traffic Gateway |           |
+  |              +-------------+                +----------------+           |
+  |                            |                |                            |
+  +----------------------------+                +----------------------------+                            |
+
+
+## Application Gateway
+##
+Aplication Gateway: higher level Load Balancer
+
+Route traffic by URI or Host Header information
+
+               HTTP Request  (URI / Host header)
+                            |
+             +----------------------------+
+             |    Application Gateway     |
+             +----------------------------+
+                            |
+        +--------------------------------------+
+        |                   |                  |
+   +---------+         +---------+         +---------+
+   |   VM    |         |   VM    |         |   VM    |
+   +---------+         +---------+         +---------+
+ http://..videos..    http://..search..     http://..images..
+
+Benefits:
+  - App Gateway can scale up or down based on amount of traffic
+  - Encryption:  Comply w/ security policies.  Disable / enable
+                    encrypted traffic to backend
+  - Zone Redundancy   : Span multiple availability zones / improve fault resiliency
+  - Multi-site hosting:  Use same application gateway for up to 100 websites
+
+
+## Content Delivery Network
+##
+
 
 
 
