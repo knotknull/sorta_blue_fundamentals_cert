@@ -552,6 +552,27 @@ Benefits:
 ## Content Delivery Network
 ##
 
+Content Delivery Network (CDN): distributed network of servers that deliver
+  web content close to users.
+
+Benefits:
+  - Better Performance
+  - Scaling
+  - Distribution of user requests, less traffic at origin server (master copy)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
