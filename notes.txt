@@ -561,6 +561,118 @@ Benefits:
   - Distribution of user requests, less traffic at origin server (master copy)
 
 
+##########################################################################
+##  Storage
+##########################################################################
+
+##  Overview
+##
+
+Storage Account: Unique Azure Namespace for data
+        - Every object in Azure has its own web address
+
+Storage web address format:
+  <storage_acct>.<storage_type>.core.windows.net
+eg.
+  mapstoreacct.blob.core.windows.net
+
+
+##  BLOB
+##
+BLOB: Binary Large Object
+   - 3 levels to BLOB storage
+
+
+    +---------------------------------+
+    |  Storage Account                |
+    |                                 |
+    |   +-------------------------+   |
+    |   | Container               |   |
+    |   |  +--------+  +--------+ |   |
+    |   |  | BLOB 1 |  | BLOB 2 | |   |
+    |   |  +--------+  +--------+ |   |
+    |   |                         |   |
+    |   |        +--------+       |   |
+    |   |        | BLOB 3 |       |   |
+    |   |        +--------+       |   |
+    |   +-------------------------+   |
+    |                                 |
+    +---------------------------------+
+
+NOTE:  Can stream audio / video from BLOB storage
+       Write log files regardless size / frequency
+       Any kind of data: DR, backup, archive etc.
+
+# BLOB Types
+  - Block: store text / binary data upto *** 4.7TB
+           Made up of individually managed blocks of data (?)
+
+  - Append: Block BLOB that are optimized for append operations.
+           Works well for logging.
+
+  - Page: Store files up to 8TB. Any part of the file could be accessed at
+          any time, e.g. Virtual Hard Drive
+
+# Pricing Tiers
+  - Hot    : Frequently accessed files, lower access times, higher costs
+  - Cool   : Lower storage costs, higher access times. Data remains for
+               at least 30 days
+  - Archive: Lowest costs, highest access times
+
+
+##  Disk
+##
+
+# Managed Disk:
+   - Attach to VMs
+   - Azure manages, dont worry about backup, uptime
+   - Azure guarantees size / performance
+   - Upgrade disk size and type
+
+
+# Disk Types:
+   - HDD: spinning hard drive, low cost. Best for backups
+
+   - Standard SSD: Standard for Production. Higher reliability, scalability,
+                    lower latency over HDD
+
+   - Premium SSD : Fast, high performance. Very low latency.
+                    Use for critical workloads. (DBs)
+
+   - Ultra Disk  : Most demanding, data intensive workloads.
+                    Disks up to 64TB. (Heavy transaction, complex analytics,
+                    gaming, rendering and low queue depth databases)
+
+
+##  File
+##
+
+# File Storage Account:
+  Benefits:
+    - Share access to Azure file storage across machines and provide access
+         to on-prem infrastructure.
+
+    - Managed: dont have to worry about HW / OS
+
+    - Resilient: Network and power outages won't affect your storage
+         redundancies built in.
+
+# Scenarios
+  - Hybrid: supplement / replace on-prem storage
+  - Lift and Shift: Move existing file storage and related services, to Azure
+
+
+##  Archive
+##
+
+  - requirements: compliance, policies
+  - lowest price, few dollars/ month gets per TBs of space
+  - features: durable, encrypted, stable. Perfect for infrequently used data
+
+
+
+
+
 
 
 
