@@ -678,17 +678,92 @@ NOTE:  Can stream audio / video from BLOB storage
 ##########################################################################
 
 
+##  Cosmos DB
+##
+
+ - Global DB
+
+ - Synchronization:  Easy to expand to more regions and have data stay
+                     in sync (one click)
+      - Synchronization handled by Cosmos
+
+ - Latency: single digit latency (0-9ms) anywhere in the world (?)
+
+ - Scalability:
+      - Automated: Can automate scaling dependent on resource demand
+      - Infinite : Any number of users of application can be supported (?????)
+      - Lowest Price: only pay for resources used
+
+ - Connectivity:
+      - Developer: Choose from SDKs and APIs
+      - Languages: C#, Java, Node.js
+      - Platforms: Can integrate with SQL, MongoDB, Cassandra
+
+NOTE:  Can be expensive!!!!
 
 
+##  Azure SQL
+##
 
+ - Managed SQL Server
 
+                     +-----------+
+                     |           |
+                     |    SQL    |
+                     |           |
+                     +-----------+
+                           ^
+                           |
+                           v
+  +-------------------------------------------------------+
+  |                     A Z U R E                         |
+  +-------------------------------------------------------+
+                ^                           ^
+                |                           |
+                v                           v
+    +-------------------------+    +-------------------------+
+    |        Hardware         |    |         IaaS            |
+    +-------------------------+    +-------------------------+
 
+ - Can migrate On-prem SQL Server to AzureSQL directly
+      - frictionless
+      - cost savings
+      - Lower TCO
 
+ - Built-in Machine Learning
+    - Optimization: suggestion on how to optimize performances
+         of Azure SQL instances
+    - Warnings;  will warn if instances are degrading, etc.
 
+ - Scalability:  Scale Azure SQL instances and get HA
+ - Size    :  Manage up to 100TB
+ - Security:  Benefit from built-in security features of Azure cloud platform
 
+##  Azure DB for MySQL
+##
+MySQL Open Source DB
 
+Azure DB for MySQL == PaaS
+   - Focus on dev not infrastructure
+   - choice of language / framework
+      - PHP / WordPress
 
+   - HA
+   - Azure Security Features
+   - Cloud PaaS Features:
+      - patching, backups, monitoring, included
 
+##  Azure DB for PostgreSQL
+##
+
+Open Source DB
+  - Extensions: JSONB, geospatial functions, indexing, integration w/ tools
+  - Horizontal Scaling: Very performance access to distributed data sets
+              across 100s of servers
+  - Performance Recommendations: get recommendations based on usage
+          get notifications of disruptive events.
+   - Cloud PaaS Features / fully managed:
+      - patching, backups, monitoring, included
 
 
 
