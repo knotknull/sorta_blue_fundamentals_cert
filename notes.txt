@@ -766,6 +766,37 @@ Open Source DB
       - patching, backups, monitoring, included
 
 
+##  Database Migration Services
+##
+
+https://datamigration.microsoft.com/
+
+Dedicated tool to migrate from on-prem to cloud.
+  - single tool
+  - Documentations: Comprehensive step-by-step guides
+  - Guides to migrate non MSFT DBs to Azure SQL (managed)
+      or Azure SQL Server (non-managed)
+
+
+##########################################################################
+##  Authentication & Authorization
+##########################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
