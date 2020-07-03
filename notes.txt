@@ -783,18 +783,69 @@ Dedicated tool to migrate from on-prem to cloud.
 ##########################################################################
 
 
+##  Identity Services
+##
+
+Authentication: Confirm user is the user
+                confirm identity
+                first test of access
+
+Authorization : Provide access to resources
+                comes after authentication
+                do you get access
+                granular control
+
+# Access Management
+  - Auth / Auth
+  - Keep out unauthorized
 
 
 
+##  Azure Active Directory
+##
+
+# Active Directory
+  - traditional office use
+  - AD not designed for web
+  - AD authentication uses services that aren't available on Azure
+
+# Azure Active Directory
+  - AD IS NOT AAD
+  - AAD is a service
+
+  NOTE: You can't have an Azure account without and AAD service.
+
+  - Every Azure account needs a first user (owner) and this user is
+    in the initial AAD instance
+
+# Tenant:   Tenant == AAD instance
+
+  - tenant represents an organization within Azure
+  - A tenant is a dedicated instance of AAD that an organization
+    receives when signing up for Azure
+        - first thing created in an Azure Account
+  - One user - One Tenant
+        - each user an only belong to single tenant
+        - BUT users can be guests of other tenants
+
+  NOTE: Each tenants is distinct and separate from other AAD tenants
 
 
+# Subscription
+  - Billing Entity
+      - all resources within a subscription are billed together
+
+  - Cost separation
+      - can have multiple subscriptions within a tenant (separate costs)
+
+  - Payment stopped, services stopped
+
+# Hybrid Cloud Architecture
 
 
-
-
-
-
-
+    +--------------+      +--------+      +----------+
+    |  On-Premise  | ===> |  AAD   | ===> |  Azure   |
+    +--------------+      +--------+      +----------+
 
 
 
