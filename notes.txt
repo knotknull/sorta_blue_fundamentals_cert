@@ -848,6 +848,40 @@ Authorization : Provide access to resources
     +--------------+      +--------+      +----------+
 
 
+##  Mult-Factor Authentication
+##
+- Built into Azure Active Directory
+- At least 2 ways of authentication:
+    - Something you know
+    - Something you have (app, fob)
+    - Something you are  (biometrics)
+
+email addr / password  --------->> SMS Text to Mobile number
+(something you know)                  (something you have)
+
+
+
+##########################################################################
+##  Azure Solutions
+##########################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
