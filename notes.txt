@@ -968,11 +968,32 @@ email addr / password  --------->> SMS Text to Mobile number
         creates models for you.
 
 
+##  Serverless
+##
+   - Not managing servers
+      - extreme version of PaaS
 
+# Azure Functions
+   - First serverless services on Auzre
+   - Single task performed, runs once per invocation
+   - Basic Compute Unit
 
+# Logic Apps
+   - Connect systems inside and outside of Azure platform
+      - Integrate apps, data flows, services and systems
+   - Automation
+      - Schedule, automate and orchestrate tasks and processes
+   - No coding skills needed
+      - Access to apps and integrate
 
+# Event Grid
+   - Network of connections across Azure services
+   - Routing service for sending / receiving events between apps
+   - Serverless / no infrastructure to manage / sign up for service
+   - Simplifies complex cloud architecture
 
-
+NOTE: Serverless approaches work extremely well with cloud services.
+      (ACloud.guru is all serverless)
 
 
 
