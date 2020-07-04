@@ -866,8 +866,106 @@ email addr / password  --------->> SMS Text to Mobile number
 ##########################################################################
 
 
+##  Internet of Things
+##
+
+#  IoT Hub: Backend for IoT  Devices
+  - Managed and secure
+  - Ease of Deployment
+  - Platform-as-a-Service (PaaS)
+  - Scaling and Authentication
 
 
+#  IoT Central
+  - Software as a Service (SaaS)
+  - No coding needed
+      - receives feeds from devices and focus on metrics / business value
+  - Pre-made Connectors
+      - 100s of connectors in IoT Central
+
+
+##  Big Data
+##
+
+#  Data Lake Analytics
+  - Large amounts of data
+  - Parallel processing of data
+  - Servers, processes and other services ready to go
+
+#  HDInsights
+  - Similar to Azure Data Lake Analytics
+  - Open Source
+  - Includes Apache Hadoop, Spark and Kafka
+
+# Databricks
+  - Based on Spark, distributed cluster-computing framework
+  - Run and process a dataset on many computers simultaneously
+  - Databricks (Azure) provides all the computing power
+  - Integrates with other Azure Storage services
+
+# Azure Synapse Analytics
+  - Azure's data warehouse offering
+  - Used to be Azure SQL Data Warehouse
+  - Used for reporting and data analysis
+  - Use Synapse SQL language
+
+- Speed
+- Cost Reduction
+- Better Decision Making
+- New Product and Services
+
+
+##  Artificial Intelligence
+##
+ - Machines imitate intelligent human behavior
+
+# Machine Learning / AI
+   - Models: definition of what ML app is learning.
+             Set of rules of how to use data provided
+             Model finds patterns based on rules
+
+   - Knowledge Mining:
+      - Use Azure Search to find existing insights in data
+      - File relationships, geographic connections, etc.
+
+   - Built-in Apps:
+      - A number of built-in apps that you can use for ML/AI
+      - i.e. cognitive services / bot services
+
+
+# Azure Cognitive Services
+   - Vision
+      - use vision service to recognize, identify and caption videos / images
+
+   - Decision
+      - make decisions based on content
+          - detect offensive language
+          - detect IoT anomalies
+
+   - Speech
+      - Automatic speech-to-text transcription.
+          - speaker identification
+          - speaker verification
+
+
+# Azure Machine Learning Studio
+   - Visual tool to manage ML needs
+   - Supports all Azure ML Tools
+   - Pre-made modules
+   - Use for real-world scenarios:
+      - twitter sentiment analysis
+      - photo grouping
+      - movie recommendations
+
+
+# Machine Learning Service
+   - End-to-End Service
+      - Service to use AI/ML on Azure
+   - Tooling
+      - Collection of tools to help build AI apps
+   - Automation
+      - Azure automatically recognizes trends in your apps and
+        creates models for you.
 
 
 
