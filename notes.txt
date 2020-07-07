@@ -1009,18 +1009,90 @@ NOTE: Serverless approaches work extremely well with cloud services.
   - Cost Management: minimize resource waste
   - Templates: reuse template deployments
 
-
-
-
-
-
-
+aidemos.microsoft.com
 
 
 
 ##########################################################################
+## Security
+##########################################################################
+
+## Securing Network Connectivity
 ##
-##########################################################################
+
+# Firewall:
+  - defines rules for what kind of traffic can/can't access device or service
+  - hardware / software versions
+  - critical part of network
+
+
+# Distributed Denial of Service (DDoS)
+   - many devices targeting a specific site
+      ex. Github 127M req / sec
+
+
+# DDoS Protection Service
+  - Detects DDoS attack and deflects it
+  - No downtime
+
+# Network Security Group
+  - Resource firewall. Attach to virtual network, subnet, network interface
+  - Set of access rules for inbound / outbound traffic
+
++-----------------------------------------------------------+
+|                         Firewall                          |
++-----------------------------------------------------------+
+                              ^
+                              |
+                       <VirtualNetwork>
+                              ^
+                              |
+                     +-----------------+
+                     |NSG              |
+                     |  +-----------+  |
+                     |  | Virtual   |  |
+                     |  | Machine   |  |
+                     |  +-----------+  |
+                     |                 |
+                     +-----------------+
+
+# Application Security Group
+  - Protects Application Infrastructure
+      - Focus security on app rather than IP endpoint
+  - Natural extension
+      - Group VMs / VNets into Logical Application Groups
+          - Apply Application Security Group
+
+## Azure Security Center
+##
+  - Security Portal within Azure Portal
+      - Threat alerts
+
+  - Works for Hybrid architectures
+  - Each VM has an agent installed, sends data to Security Center
+  - Azure Analyzes data and alerts if necessary
+
+  - Policy and compliance metrics
+  - "Secure Score" to encourage good security practices
+  - Integrate w/ other cloud providers (AWS / GCP)
+      - using Security Information Event Management (SIEM) tool
+  - Alerts for insecure resources
+
+# Using Security Center
+  - Define Policies
+  - Protect resources
+  - Respond
+
+
+## Azure Key Vault Center
+##
+
+  - Secure Hardware
+  - App Isolation
+      - App can't pass on secrets or access another apps secrets
+  - Global Scaling
+
+
 
 
 
