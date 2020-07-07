@@ -996,6 +996,31 @@ NOTE: Serverless approaches work extremely well with cloud services.
       (ACloud.guru is all serverless)
 
 
+##  DevOps
+##
+  Azure Boards   :  Keep track of tasks, timelines, issues, planning
+  Azure Pipelines:  Produce and test software automatically / continuously
+  Azure Repos    :  Store source code
+  Azure Test Plans: Design tests of applications, implement automatically
+  Azure Artifacts:  Share app code and code libraries w/ other teams
+
+# Azure DevTest Labs
+  - Environment Management: create test / dev environments
+  - Cost Management: minimize resource waste
+  - Templates: reuse template deployments
+
+
+
+
+
+
+
+
+
+
+##########################################################################
+##
+##########################################################################
 
 
 
