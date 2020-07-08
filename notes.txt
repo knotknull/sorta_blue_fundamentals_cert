@@ -1093,7 +1093,7 @@ aidemos.microsoft.com
   - Global Scaling
 
 
-## Azure Information Production
+## Azure Information Protection
 ##
 
  - Secure documents, emails and data outside of the company
@@ -1106,7 +1106,7 @@ aidemos.microsoft.com
  - Integration: document access control integrated w/ Microsoft Office
 
 
-## Advanced Thread Protection (ATP)
+## Advanced Threat Protection (ATP)
 ##
  - Monitor Users
     - Analyze user activity and info.  Including perms and memberships of groups
@@ -1127,8 +1127,77 @@ aidemos.microsoft.com
 
 
 ##########################################################################
-##
+##  Privacy, Compliance and Trust
 ##########################################################################
+
+
+## Governance / Azure Policy
+##
+
+## Azure Policy
+  - set of rules
+  - resources comply w/ resources
+  - Azure policy is a service that enforces your policies
+
+## Role-Based Access Control (RBAC)
+  - Define User Access: define specific user access to individual resources
+  - Minimum Access: RBAC can enable minimum access
+  - Target Specific Use Cases
+
+## RBAC - Role Assignment
+  - Security Principal: an object representing an entity (i.e. user or group)
+           which can access the resources
+
+  - Role Definition: collection of permissions (read, write, delete, etc)
+              lists what operations can be performed
+
+  - Scope: Resources the access applies to.
+              Specify which role can access a resource or resource group
+
+## Lock
+  - Assignment: Can assign a lock to a subscription, resource group or resource
+  - Type: Delete   : can't delete locked object
+          Read-Only: can't make any changes to object
+
+    NOTE: Locks need to be removed before locked actions can be performed again
+
+## Azure Blueprints
+  - Templates for creating Azure Resources
+     can contain:
+            - resource templates
+            - Role Based Access Control
+            - Policies
+            - Samples for common regulations
+
+## Azure Advisor for Security Assistance
+  - Part of Security Center
+
+
+## Azure Monitor
+##
+  - Telemetry: data on how services are running
+  - All service telemetry goes to Azure Monitor
+  - Constant feed
+      - Even on-prem services can send telemetry data to Azure Monitor
+  - Fully Managed
+  - Query Language
+  - Machine Learning can be used to predict / recognize problems w/ resources
+
+
+## Azure Service Health
+##
+  - Personalized dashboard in portal that highlights service issues
+      affecting resources
+
+  - Custom Alerts: get notified of planned and non-planned outages
+  - Real-time tracking
+  - Free service
+
+
+
+
+
+
 
 
 
