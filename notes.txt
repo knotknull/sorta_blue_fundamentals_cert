@@ -1093,9 +1093,42 @@ aidemos.microsoft.com
   - Global Scaling
 
 
+## Azure Information Production
+##
+
+ - Secure documents, emails and data outside of the company
+  - works w/ Office365
+
+ - Classify Data by sensitivity, policies or manually
+ - Track Activities
+   - Track what is happening w/ shared data and revoke if needed
+ - Share Data, control who edits, views, prints and forwards
+ - Integration: document access control integrated w/ Microsoft Office
 
 
+## Advanced Thread Protection (ATP)
+##
+ - Monitor Users
+    - Analyze user activity and info.  Including perms and memberships of groups
+ - Baseline Behavior
+    - Record normal behavior (? whatever that is)
+    - Activity outside norm is logged as suspicious
+ - Suggest Changes
+    - ATP will suggest changes to conform w/ security best practices
 
+# Cyber-Attack Kill-Chain
+  - Reconnaissance
+      - ATP will raise alerts if user is searching for info about users,
+          device IP addresses, etc.
+  - Brute Force
+      - Any attempts to guess user credentials will be identified and flagged
+  - Increasing Privileges
+      - Any attempts to gain more privileges will be flagged
+
+
+##########################################################################
+##
+##########################################################################
 
 
 
