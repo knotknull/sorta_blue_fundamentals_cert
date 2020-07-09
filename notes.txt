@@ -1134,17 +1134,17 @@ aidemos.microsoft.com
 ## Governance / Azure Policy
 ##
 
-## Azure Policy
+# Azure Policy
   - set of rules
   - resources comply w/ resources
   - Azure policy is a service that enforces your policies
 
-## Role-Based Access Control (RBAC)
+# Role-Based Access Control (RBAC)
   - Define User Access: define specific user access to individual resources
   - Minimum Access: RBAC can enable minimum access
   - Target Specific Use Cases
 
-## RBAC - Role Assignment
+# RBAC - Role Assignment
   - Security Principal: an object representing an entity (i.e. user or group)
            which can access the resources
 
@@ -1154,14 +1154,14 @@ aidemos.microsoft.com
   - Scope: Resources the access applies to.
               Specify which role can access a resource or resource group
 
-## Lock
+# Lock
   - Assignment: Can assign a lock to a subscription, resource group or resource
   - Type: Delete   : can't delete locked object
           Read-Only: can't make any changes to object
 
     NOTE: Locks need to be removed before locked actions can be performed again
 
-## Azure Blueprints
+# Azure Blueprints
   - Templates for creating Azure Resources
      can contain:
             - resource templates
@@ -1194,14 +1194,62 @@ aidemos.microsoft.com
   - Free service
 
 
+## Compliance
+##
+
+Industry regulations
+General Data Protection Regulation
+ISO Standard 9001:2008 Customer satisfaction
+NIST: National Institute of Standards and Technology
+   - US Federal agencies
+
+# Azure Compliance Manager
+  - gives recommendations about compliance and resources
+      - GDPR, ISO, NIST and others
+  - Assign compliance tasks and track progress
+  - Compliance score
+  - Secure storage
+      - Upload documents to prove compliance
+  - Reports of compliance data to auditors, etc.
 
 
+# Azure Government Cloud
+  - Government Cloud, dedicated separate data centers
+  - Exclusivity: only screened personnel from US federal, state and local
+          government have access
+  - Compliance: Ensure compliance w/ required US govt agencies and level 5 DoD approval
+  - Azure benefits
 
 
+# China Region
+  - Located in China
+      - no connection outside china, including other Azure regions
+  - Data kept in China
+      - certain global Azure services won't work fully
+  - Compliant w/ Chinese regulations
+
+## Azure Privacy
+##
+ - Azure Information Production
+      - classify, label and protect data based on sensitivity
+ - Azure Policy
+      - Define and enforce rules to ensure privacy / regulations
+ - Guides
+      - Use guides to respond w/ GDPR privacy requests
+ - Complaince Manager
+      - ensure following privacy guidelines
+
+# Microsoft Privacy Statement
+https://privacy.microsoft.com/en-gb/privacystatement
 
 
+## Trust
+##
 
+# Trust Center
+  - hub for security, privay, GDPR, data location, compliance, etc.
 
-
+# Service Trust Portal
+  - Review audits on Microsoft products / services
 
 [.]
