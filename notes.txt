@@ -1252,4 +1252,48 @@ https://privacy.microsoft.com/en-gb/privacystatement
 # Service Trust Portal
   - Review audits on Microsoft products / services
 
+
+
+##########################################################################
+##  Pricing
+##########################################################################
+
+## Pricing Structure
+##
+  - pay for hours used
+  - pay more for more resources
+  - Service payment is tiered
+  - Location can affect price
+
+## Subscriptions
+##
+  - every resource within a subscription
+  - can have multiple subscriptions per account
+      - along lines of business, etc.
+  - Billing Admin
+      - one or more users
+      - Manages anything to do w/ billing and invoicing
+      - Separation of responsibility
+
+  - Billing Cycle
+      - 30 or 60 days
+
+# Management Groups
+  - Take action across subscriptions in bulk.
+      - large orgs
+  - Manage access,policies and compliance in multiple subscriptions at same time
+  - Billing Logic
+      - maintain billing associated with budgets
+      - nest management groups to indicate hierarchy
+
+
+
+Azure Offer Details:
+https://azure.microsoft.com/en-au/support/legal/offer-details/
+
+
+
+
+
+
 [.]
