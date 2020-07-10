@@ -1323,12 +1323,12 @@ https://azure.microsoft.com/en-us/free/free-account-faq/
 
 # Pricing Calculator
   - pick resources and get monthly estimate
-https://azure.microsoft.com/en-au/pricing/calculator/
+https://azure.microsoft.com/en-us/pricing/calculator/
 
 
 # TCO Calculator
   - Get estimate of moving on-prem to Azure
-https://azure.microsoft.com/en-au/pricing/tco/calculator/
+https://azure.microsoft.com/en-us/pricing/tco/calculator/
 
 
 ## Best Practices Factors
@@ -1350,7 +1350,7 @@ https://azure.microsoft.com/en-au/pricing/tco/calculator/
 
 # Tags
   - Non-functional Label:  Can attach to resource or resource group
-  - Identify roles:   which roles acan access
+  - Identify roles:   which roles can access
   - Related resources:  bulk processing / updating
   - Filter:   filter resources per project or customer
   - Unambiguous: description, tag name, potential values
@@ -1370,13 +1370,58 @@ https://azure.microsoft.com/en-au/pricing/tco/calculator/
 
 
 
+##########################################################################
+##  Support
+##########################################################################
 
 
+## Support Plans
+##                           Support         Cost
+  - Basica                      |   increases  |
+  - Developer                   |              |
+  - Standarda                   |  increases   |
+  - Professional Drrecta        |              |
+  - Premier                     |              |
+                                V              V
+All Support Plans
+  - 24/7 Access for billing and subscrpition support
+  - Online Self-Help
+  - Forums
+  - Azure Advisor
+  - Service Health
+
+                                                           Professionsl
+Support               Developer       Standards          Direct               Premier
+price                    $               $$              $$$                   $$$$
+Tech Support       Bus. Hours Email   24/7 email, phone   24/7 email, phone   24/7 email, phone
+Support Cases         Unlimited         Unlimited        Unlimited            Unlimited
+Response Time      Sev. C: < 8 hrs    Sev. C: < 8 hrs    Sev. C: < 4 hrs      Sev. C: < 4 hrs
+                                      Sev. B: < 4 hrs    Sev. B: < 2 hrs      Sev. B: < 2 hrs
+                                      Sev. A: < 1 hrs    Sev. A: < 2 hrs      Sev. A: < 1 hrs
+Arch Support      gen. guidance       gen. guidance      Arch. Guidance       Customer Specific
+Ops Support                                              Onboarding reviews   Tech Reviews
+                                                                              Reporing
+                                                                              Tech Account Management
+Training                                                 Webinars             On Demand
 
 
+## Tickets
+##
+  - support enquiry
+  - unique identifier
+  - single reference to issue
 
+# Submit ticket
+  - through portal
+  - ticket type:
+          - billing
+          - Service and subscription limits (Quotas)
+          - Subscription Mgmt
+          - technical
 
-
+Free Account allows you to:
+  - create tickets for subscription and billing
+  - no tech support  
 
 
 [.]
