@@ -1287,9 +1287,92 @@ https://privacy.microsoft.com/en-gb/privacystatement
       - nest management groups to indicate hierarchy
 
 
-
 Azure Offer Details:
 https://azure.microsoft.com/en-au/support/legal/offer-details/
+
+
+## Cost Management
+##
+  Free Accounts
+    - 12 mos free access
+    - 750 hrs compute / 5 gb storage / 250 SQL DB / 5GB Cosmos DB
+    - Azure Functions
+    - Event Grid
+
+# Azure Cost Management
+  - In Azure Portal and free
+  - Reports / Recommendations
+  - Optimization
+  - Monitor AWS charges
+https://azure.microsoft.com/en-us/free/free-account-faq/
+
+## Pricing Factors
+##
+
+# Influences on Pricing
+  - Resource Size
+  - Resource Type
+  - Location
+  - Bandwidth
+  - 3 Billing Zones
+      - Regions within Billing zone
+      - Traffic between regions within Billing Zone is free
+      - Traffic between regions between Billing Zones is charged
+  - Ingress Data is always free
+  - Egress Data has a cost between billing zones
+
+# Pricing Calculator
+  - pick resources and get monthly estimate
+https://azure.microsoft.com/en-au/pricing/calculator/
+
+
+# TCO Calculator
+  - Get estimate of moving on-prem to Azure
+https://azure.microsoft.com/en-au/pricing/tco/calculator/
+
+
+## Best Practices Factors
+##
+
+
+# Spending limits
+  - Default spending limits, when credits used, limit kicks in
+  - No Increase:  When credits are gone, remove spending limit or
+                    leave it in effect
+  - No Spending Limit:  Pay as you go have no spending limits
+
+# Quotas
+  - Property limit of an Azure service
+        i.e. 100 namespaces for Event Hub
+
+  - Quotas ensure service level
+  - Quotas Change:  Can ask Microsoft to increase
+
+# Tags
+  - Non-functional Label:  Can attach to resource or resource group
+  - Identify roles:   which roles acan access
+  - Related resources:  bulk processing / updating
+  - Filter:   filter resources per project or customer
+  - Unambiguous: description, tag name, potential values
+
+
+# Pay as you go
+  - most expensive option
+
+# Reserved Instance
+  - can save money:   ex. save 70% over 3 years.
+  - Not all Azure services can be reserved
+
+# Advisor
+  - Security and resource optimization
+  - Has cost optimization function also
+  - best practices via recommendations
+
+
+
+
+
+
 
 
 
