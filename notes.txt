@@ -1377,30 +1377,30 @@ https://azure.microsoft.com/en-us/pricing/tco/calculator/
 
 ## Support Plans
 ##                           Support         Cost
-  - Basica                      |   increases  |
-  - Developer                   |              |
-  - Standarda                   |  increases   |
-  - Professional Drrecta        |              |
-  - Premier                     |              |
-                                V              V
+  - Basic                      |     cost     |
+  - Developer                  |              |
+  - Standard                   |  increases   |
+  - Professional Direct        |              |
+  - Premier                    |              |
+                               V              V
 All Support Plans
-  - 24/7 Access for billing and subscrpition support
+  - 24/7 Access for billing and subscription support
   - Online Self-Help
   - Forums
   - Azure Advisor
   - Service Health
 
-                                                           Professionsl
+                                                           Professional
 Support               Developer       Standards          Direct               Premier
 price                    $               $$              $$$                   $$$$
 Tech Support       Bus. Hours Email   24/7 email, phone   24/7 email, phone   24/7 email, phone
 Support Cases         Unlimited         Unlimited        Unlimited            Unlimited
 Response Time      Sev. C: < 8 hrs    Sev. C: < 8 hrs    Sev. C: < 4 hrs      Sev. C: < 4 hrs
                                       Sev. B: < 4 hrs    Sev. B: < 2 hrs      Sev. B: < 2 hrs
-                                      Sev. A: < 1 hrs    Sev. A: < 2 hrs      Sev. A: < 1 hrs
+                                      Sev. A: < 2 hrs    Sev. A: < 1 hrs      Sev. A: < 1 hrs
 Arch Support      gen. guidance       gen. guidance      Arch. Guidance       Customer Specific
 Ops Support                                              Onboarding reviews   Tech Reviews
-                                                                              Reporing
+                                                                              Reporting
                                                                               Tech Account Management
 Training                                                 Webinars             On Demand
 
@@ -1421,7 +1421,40 @@ Training                                                 Webinars             On
 
 Free Account allows you to:
   - create tickets for subscription and billing
-  - no tech support  
+  - no tech support
+
+
+## Channels
+##
+
+# Support Channels
+  - Azure Documentation
+      - Articles
+  - Forums
+  - Social Media
+
+
+# Azure Discussion / best practices / latest news
+https://techcommunity.microsoft.com/t5/azure/ct-p/Azure
+
+# Azure Community Support
+https://azure.microsoft.com/en-au/support/community/
+
+# Azure Forum
+https://social.technet.microsoft.com/Forums/en-US/home?category=windowsazureplatform
+
+
+## Knowledge Center
+##
+ - No New Questions
+ - Search
+
+
+
+
+# Knowledge Center
+https://azure.microsoft.com/en-us/resources/knowledge-center/
+
 
 
 [.]
