@@ -1449,11 +1449,34 @@ https://social.technet.microsoft.com/Forums/en-US/home?category=windowsazureplat
  - No New Questions
  - Search
 
-
-
-
-# Knowledge Center
 https://azure.microsoft.com/en-us/resources/knowledge-center/
+
+
+## Service Level Agreements
+##
+  - Contract w/ Azure - Microsoft that states service uptime and connectivity
+  - SLA per product
+  - SLA are mandatory.  No SLAs for free products / services.
+
+https://azure.microsoft.com/en-us/support/legal/sla/
+
+
+## Service Lifecycle
+##
+  - Preview
+      - private: available to specific customers invited by product team
+      - public : available to all azure customers, enable thru Azure Portal
+  - General Availability
+      - Available to all Azure customers as a normal service.
+          - includes SLA
+          - rolled out to certain regions first
+
+# Azure Updates: for new services
+https://azure.microsoft.com/en-us/updates/
+
+# Azure Preview Portal (preview of portal as a product)
+https://preview.portal.azure.com/#home
+
 
 
 
