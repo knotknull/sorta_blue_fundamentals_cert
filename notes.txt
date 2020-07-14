@@ -1479,5 +1479,77 @@ https://preview.portal.azure.com/#home
 
 
 
+##########################################################################
+##  Exam
+##########################################################################
+
+ - 60 minutes to complete
+ - ~ 44 questions
+ - Multiple Choice
+ - Statement w/ underlined part.  Replace if incorrect
+ - Drag and Drop: drap into correct order of execution
+ - Click on an area in an image (i.e. select service in portal)
+ - Multiple True / False
+ - Review any question, except the first six (?)
+
+## Exam Parts
+##
+  - Understand cloud concepts
+      - 15 - 20%
+      - chapters 1 and 2 of course
+  - Understand core Azure Services
+      - 30 - 35%
+      - chapters 3 - 9
+  - Understand security, privacy, compliance and trust
+      - 25 - 30%
+      - chapters 10 - 11
+  - Understand Azure pricing and support
+      - 20 - 25%
+      - chapters 12 - 13
+
+need 700 out of 1000 points to pass
+can retake 5x per 12 month period.  24hr wait for 2nd time then 14 days wait.
+
+## Schedule Microsoft Exam
+https://docs.microsoft.com/en-us/learn/certifications/exams/az-900
+# Microsoft Practice Tes
+
+# Microsoft Exam Practice Exam
+https://www.mindhub.com/az-900-microsoft-azure-fundamentals-microsoft-official-practice-test/p/MU-AZ-900?utm_source=microsoft&utm_medium=certpage&utm_campaign=msofficialpractice
+
+
+# Microsoft Learn
+https://docs.microsoft.com/en-us/learn/
+
+# Microsoft Learning Paths
+https://docs.microsoft.com/en-us/learn/browse/?resource_type=learning%20path
+
+# Microsoft Certifications
+https://docs.microsoft.com/en-us/learn/certifications/
+
+
+## Next Steps
+##
+  - use Portal and CLI, understand usage
+  - ACG labs, short course to perform single task
+  - ACG Projects, longer course to build a project
+  - Azure this week
+      acloud.guru/series/azure-this-week
+
+  - Forum:
+    https://acloud.guru/forums/az-900-microsoft-azure-fundamentals/
+
+## Study These
+https://docs.microsoft.com/en-us/learn/certifications/exams/az-900
+https://docs.microsoft.com/en-us/learn/paths/azure-fundamentals/
+# Free Test
+https://www.whizlabs.com/microsoft-azure-certification-az-900/
+
+## MAP: Have Started To Go These learning path !!
+https://docs.microsoft.com/en-us/learn/paths/azure-fundamentals/
+https://docs.microsoft.com/en-us/learn/modules/explore-azure-infrastructure/  ## LAST HERE
+
+# acloud.guru forum
+https://acloud.guru/forums/az-900-microsoft-azure-fundamentals/discussion/-LuMHC6LyJnYpALmKfip/passed_az-900_today
 
 [.]
