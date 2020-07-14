@@ -1552,4 +1552,11 @@ https://docs.microsoft.com/en-us/learn/modules/explore-azure-infrastructure/  ##
 # acloud.guru forum
 https://acloud.guru/forums/az-900-microsoft-azure-fundamentals/discussion/-LuMHC6LyJnYpALmKfip/passed_az-900_today
 
+
+## AWS vs Azure 
+##
+https://docs.microsoft.com/en-us/azure/architecture/aws-professional/services
+
+
+
 [.]
