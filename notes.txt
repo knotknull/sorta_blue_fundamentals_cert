@@ -193,6 +193,11 @@ Operational Expenditure:  Ongoing cost for running a product, business or system
 
 ## Regions and Availability Zones
 ##
+# Azure Geographies
+  - Americas
+  - Europe
+  - Asia Pacific
+  - Middle East and Africa
 
 # Region
   - A region is a set of data centers deployed within a latency-defined
@@ -208,6 +213,7 @@ Operational Expenditure:  Ongoing cost for running a product, business or system
 
 # Paired Region
   - Paired within same geographic area (except Brazil South)
+        At least 300 miles away
         East US paired w/ West US
         Australia East paired w/ Australia Southeast
         NOTE: Brazil South paired w/ South Central US
@@ -236,6 +242,7 @@ Operational Expenditure:  Ongoing cost for running a product, business or system
   |          [   Zone 3   ]          |
   |                                  |
   +----------------------------------+
+
 
 
 ## Resource Groups and
@@ -298,6 +305,52 @@ Pros:
 Cons:
   - Not for everything. Worth using Azure service instead
   - Maintenance: OS updates, patches, security, etc.
+
+# Availability Set
+  - logical grouping of 2 or more VMs
+  - up to 3 fault domains (server rack w/ dedicated power and network)
+  - five logical update domains
+
++--------------------------------------------------+    +------------------------------------------------------+
+|                Fault Domain #1                   |    |                     Fault Domain #2                  |
+|                                                  |    |                                                      |
+|   +------------------------------------------+   |    |   +----------------------------------------------+   |
+|   |               Rack                       |   |    |   |                  Rack                        |   |
+|   |                                          |   |    |   |                                              |   |
+|   |  +-----------------------------------------------------------------------------------------------+   |   |
+|   |  |                                       |   |    |   |                                          |   |   |
+|   |  |        +----------+                   |   |    |   |                  +----------+            |   |   |
+|   |  |        |          | VM #1           [  Availability Set  ]            |          | VM #2      |   |   |
+|   |  |        |          | UD #1             |   |    |   |                  |          | UD #2      |   |   |
+|   |  |        +----------+                   |   |    |   |                  +----------+            |   |   |
+|   |  |                                       |   |    |   |                                          |   |   |
+|   |  +-----------------------------------------------------------------------------------------------+   |   |
+|   |                                          |   |    |   |                                              |   |
+|   |                                          |   |    |   |                                              |   |
+|   |                                          |   |    |   |                                              |   |
+|   |  +-----------------------------------------------------------------------------------------------+   |   |
+|   |  |                                       |   |    |   |                                          |   |   |
+|   |  |        +----------+                   |   |    |   |                  +-----------+           |   |   |
+|   |  |        |          | VM #3             |   |    |   |                  |           | VM #4     |   |   |
+|   |  |        |          | UD #3             |   |    |   |                  |           | UD #4     |   |   |
+|   |  |        +----------+                [  Availability Set  ]             +-----------+           |   |   |
+|   |  |                                       |   |    |   |                                          |   |   |
+|   |  |                                       |   |    |   |                                          |   |   |
+|   |  |        +----------+                   |   |    |   |                  +-----------+           |   |   |
+|   |  |        |          | VM #5             |   |    |   |                  |           | VM #6     |   |   |
+|   |  |        |          | UD #5             |   |    |   |                  |           | UD #1     |   |   |
+|   |  |        +----------+                   |   |    |   |                  +-----------+           |   |   |
+|   |  |                                       |   |    |   |                                          |   |   |
+|   |  +-----------------------------------------------------------------------------------------------+   |   |
+|   |                                          |   |    |   |                                              |   |
+|   +------------------------------------------+   |    |   +----------------------------------------------+   |
+|                                                  |    |                                                      |
++--------------------------------------------------+    +------------------------------------------------------+
+
+     VM=Virtual Machine
+     UD=Update Domain
+
+
 
 
 ## Scale Sets
@@ -1460,6 +1513,14 @@ https://azure.microsoft.com/en-us/resources/knowledge-center/
 
 https://azure.microsoft.com/en-us/support/legal/sla/
 
+# Service Credits
+Monthly Uptime        Service Credit
+Percentage             Percentage
+---------------       ---------------
+ < 99.9                   10
+ < 99                     25
+ < 95                     100
+
 
 ## Service Lifecycle
 ##
@@ -1553,7 +1614,7 @@ https://docs.microsoft.com/en-us/learn/modules/explore-azure-infrastructure/  ##
 https://acloud.guru/forums/az-900-microsoft-azure-fundamentals/discussion/-LuMHC6LyJnYpALmKfip/passed_az-900_today
 
 
-## AWS vs Azure 
+## AWS vs Azure
 ##
 https://docs.microsoft.com/en-us/azure/architecture/aws-professional/services
 
