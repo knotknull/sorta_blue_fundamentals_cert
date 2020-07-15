@@ -1030,6 +1030,8 @@ email addr / password  --------->> SMS Text to Mobile number
    - First serverless services on Auzre
    - Single task performed, runs once per invocation
    - Basic Compute Unit
+   - Durable Functions: stateful function where context is
+                         passed to function to track prior activity
 
 # Logic Apps
    - Connect systems inside and outside of Azure platform
