@@ -548,6 +548,7 @@ Usage:
 
 # Scenarios
  - Balance incoming Internet Traffic
+ - TCP / UDP Traffic
  - Internal Networks
  - Port Forwarding (traffic forwarded to specific machine)
  - Outbound Traffic:  allow outbound connectivity to VMs
@@ -577,7 +578,7 @@ VPN Gateway: Specific type of Virtual Network Gateway
 
 ## Application Gateway
 ##
-Aplication Gateway: higher level Load Balancer
+Aplication Gateway: higher level Load Balancer. HTTP / Layer 7 load balancing.
 
 Route traffic by URI or Host Header information
 
@@ -600,6 +601,10 @@ Benefits:
                     encrypted traffic to backend
   - Zone Redundancy   : Span multiple availability zones / improve fault resiliency
   - Multi-site hosting:  Use same application gateway for up to 100 websites
+  - Cookie affinity:  keep session on same server
+  - SSL Termination: Manage SSL Certificates
+  - URL rule-based routes
+  - Rewrite HTTP Headers
 
 
 ## Content Delivery Network
@@ -613,6 +618,14 @@ Benefits:
   - Scaling
   - Distribution of user requests, less traffic at origin server (master copy)
 
+## Traffic Manager
+##
+  - Uses the DNS server that's closest to the user to direct user traffic to
+     a globally distributed endpoint
+  - Can route various ways: i.e. lowest latency
+
+NOTE: Load Balancer distributes traffic within same region. Traffic Manager 
+      works at DNS level.
 
 ##########################################################################
 ##  Storage
@@ -663,14 +676,14 @@ NOTE:  Can stream audio / video from BLOB storage
   - Append: Block BLOB that are optimized for append operations.
            Works well for logging.
 
-  - Page: Store files up to 8TB. Any part of the file could be accessed at
+  - Page: Store files up to *** 8TB. Any part of the file could be accessed at
           any time, e.g. Virtual Hard Drive
 
 # Pricing Tiers
   - Hot    : Frequently accessed files, lower access times, higher costs
   - Cool   : Lower storage costs, higher access times. Data remains for
-               at least 30 days
-  - Archive: Lowest costs, highest access times
+               at least *** 30 days
+  - Archive: Lowest costs, highest access times, at least 180 days
 
 
 ##  Disk
@@ -693,7 +706,7 @@ NOTE:  Can stream audio / video from BLOB storage
                     Use for critical workloads. (DBs)
 
    - Ultra Disk  : Most demanding, data intensive workloads.
-                    Disks up to 64TB. (Heavy transaction, complex analytics,
+                    Disks up to **** 64TB. (Heavy transaction, complex analytics,
                     gaming, rendering and low queue depth databases)
 
 
@@ -702,8 +715,8 @@ NOTE:  Can stream audio / video from BLOB storage
 
 # File Storage Account:
   Benefits:
-    - Share access to Azure file storage across machines and provide access
-         to on-prem infrastructure.
+    - Fully managed file shares.  Access to Azure file storage across machines
+        and provide access to on-prem infrastructure via SMB.
 
     - Managed: dont have to worry about HW / OS
 
@@ -713,6 +726,12 @@ NOTE:  Can stream audio / video from BLOB storage
 # Scenarios
   - Hybrid: supplement / replace on-prem storage
   - Lift and Shift: Move existing file storage and related services, to Azure
+
+
+# Azure Queue
+    - service for storing large numbers of messages that can be accessed from
+       anywhere in the world.
+
 
 
 ##  Archive
