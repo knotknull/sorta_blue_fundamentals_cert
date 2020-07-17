@@ -624,7 +624,7 @@ Benefits:
      a globally distributed endpoint
   - Can route various ways: i.e. lowest latency
 
-NOTE: Load Balancer distributes traffic within same region. Traffic Manager 
+NOTE: Load Balancer distributes traffic within same region. Traffic Manager
       works at DNS level.
 
 ##########################################################################
@@ -1156,6 +1156,42 @@ aidemos.microsoft.com
   - Define Policies
   - Protect resources
   - Respond
+
+# Tiers
+  - Free:     assessments  and recommendations
+  - Standard: continuous monitoring, threat detection, just-in-time
+              access control for ports. $15 per node per month.
+
+
+NOTE:  Whether using IaaS, PaaS or Saas, Client is always responsible for:
+  - Data
+  - Endpoints
+  - Accounts
+  - Access management
+
+# Security Layers
++----------------------------------------+
+|            Physical Security           |
+|+--------------------------------------+|
+||          Identity and Acces          ||
+||+------------------------------------+||
+|||             Perimeter              |||
+|||+----------------------------------+|||
+||||             Network              ||||
+||||+--------------------------------+||||
+|||||            Compute             |||||
+|||||+------------------------------+|||||
+||||||          Application         ||||||
+||||||+----------------------------+||||||
+|||||||            Data            |||||||
+|||||||+--------------------------+|||||||
+||||||||                          ||||||||
+
+
+
+
+
+
 
 
 ## Azure Key Vault Center
