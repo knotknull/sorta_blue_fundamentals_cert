@@ -931,6 +931,15 @@ Authorization : Provide access to resources
 email addr / password  --------->> SMS Text to Mobile number
 (something you know)                  (something you have)
 
+##  Services
+  - Authentication
+  - Authorization
+  - SSO
+  - Application Management:
+      - manage cloud and on-premeise apps using AAD
+  - B2B identity services
+  - B2C identity services
+  - Device Management
 
 
 ##########################################################################
@@ -1189,8 +1198,15 @@ NOTE:  Whether using IaaS, PaaS or Saas, Client is always responsible for:
 
 
 
-
-
+## Encryption
+  - Azure Storage Service Encryption
+      Encrypts / decrypts Managed Disks, Blob, Files and Queue
+  - Azure Disk Encryption
+      Encrypt Windows / Linux IaaS virtual machine disks
+  - Uses BitLocker (win) and dm-crypt (Linux)
+  - Works with Azure Key Vault
+  - Transparent Data Encryption
+      Encrypts SQL DB and Azure Data Warehouse
 
 
 
