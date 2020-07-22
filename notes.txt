@@ -1262,7 +1262,7 @@ NOTE:  Whether using IaaS, PaaS or Saas, Client is always responsible for:
 
 # Azure Policy
   - set of rules
-  - resources comply w/ resources
+  - resources comply w/ policy
   - Azure policy is a service that enforces your policies
 
 # Role-Based Access Control (RBAC)
