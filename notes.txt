@@ -250,6 +250,7 @@ Operational Expenditure:  Ongoing cost for running a product, business or system
 ##
 
 # Resource Group
+  - Logical container for resources deployed to Azure
   - All resources are within a resource group
   - Resource Groups are NOT a resource !!
       - they are a container for resources
@@ -260,6 +261,7 @@ Operational Expenditure:  Ongoing cost for running a product, business or system
   - Resources from multiple regions can be in one resource group
   - Can be used as Access Control
       - Can give users access to a resource group and everything in it
+  - Delete a resource group and all resources it contains are deleted.
 
   - Resources can interact with other resources from different resource groups
   - Resource group has location or region because it
@@ -1483,6 +1485,11 @@ https://azure.microsoft.com/en-us/pricing/tco/calculator/
   - Related resources:  bulk processing / updating
   - Filter:   filter resources per project or customer
   - Unambiguous: description, tag name, potential values
+  - resource can have up to *** 50 tags
+  - tag name  limited to *** 512 characters (all types except storage accounts)
+  - tag name  limited to *** 128 characters for storage accounts
+  - tag value limited to *** 256 characters for all types of resources
+  - NOTE: Use Azure Policy to enforce or add tags to resources.
 
 
 # Pay as you go
