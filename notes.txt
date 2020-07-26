@@ -1452,6 +1452,13 @@ https://azure.microsoft.com/en-us/free/free-account-faq/
   - Ingress Data is always free
   - Egress Data has a cost between billing zones
 
+
+# Billing Zones
+Zone 1   : US, US Govt, Europe, Canada, UK, France, Switzerland
+Zone 2   : East Asia, Southeaset Asia, Japan, Australia, India, Korea
+Zone 3   : Brazil, South Africa, UAE
+DE Zone 1:
+
 # Pricing Calculator
   - pick resources and get monthly estimate
 https://azure.microsoft.com/en-us/pricing/calculator/
