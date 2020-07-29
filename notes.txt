@@ -1506,7 +1506,7 @@ https://azure.microsoft.com/en-us/pricing/tco/calculator/
   - can save money:   ex. save 70% over 3 years.
   - Not all Azure services can be reserved
 
-# Advisor
+# Azure Advisor
   - Security and resource optimization
   - Has cost optimization function also
   - best practices via recommendations
